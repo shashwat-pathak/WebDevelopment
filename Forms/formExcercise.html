@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Forms Excercise</title>
-</head>
-<body>
-<h1>Register</h1>
-<form>
+  <head>
+    <title>Forms Excercise</title>
+  </head>
+  <body>
+    <h1>Register</h1>
+    <form>
+      <p>What's your full name?</p>
 
-	<p>What's your full name?</p>
+      <label for="nameForm">First Name:</label>
+      <input
+        id="nameForm"
+        type="text"
+        name="first_name"
+        placeholder="First Name"
+      />
 
-    <label for="nameForm">First Name:</label>  
-	<input id="nameForm" type="text" name="first_name" placeholder="First Name">
+      <label for="nameForm">Last Name:</label>
+      <input
+        id="nameForm"
+        type="text"
+        name="last_name"
+        placeholder="Last Name"
+      />
 
-	<label for="nameForm">Last Name:</label>  
-	<input id="nameForm" type="text" name="last_name" placeholder="Last Name">
+      <p>Please select your gender:</p>
 
-	<p>Please select your gender:</p>
+      <label for="Male">Male</label>
+      <input id="Male" type="radio" name="gender" />
 
-    <label for="Male">Male</label>  
-	<input id="Male" type="radio" name="gender">
+      <label for="Female">Female</label>
+      <input id="Female" type="radio" name="gender" />
 
-    <label for="Female">Female</label>  
-	<input id="Female" type="radio" name="gender">
+      <label for="Other">Other</label>
+      <input id="Other" type="radio" name="gender" />
 
-	<label for="Other">Other</label>  
-	<input id="Other" type="radio" name="gender">
+      <p>What is your Email id?</p>
 
-	<p>What is your Email id?</p>
+      <label for="emailId">Other</label>
+      <input id="emailId" type="radio" name="gender" />
 
-	<label for="emailId">Other</label>  
-	<input id="emailId" type="radio" name="gender">
-
-
-    
-
-
-
-	<button> Submit </button>
-
-	
-</form>
-</body>
+      <button>Submit</button>
+    </form>
+  </body>
 </html>
