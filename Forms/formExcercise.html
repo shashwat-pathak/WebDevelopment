@@ -4,7 +4,7 @@
     <title>Forms Excercise</title>
   </head>
   <body>
-    <h1>Register</h1>
+    <h1>Register User</h1>
     <form>
       <p>What's your full name?</p>
 
@@ -13,7 +13,8 @@
         id="nameForm"
         type="text"
         name="first_name"
-        placeholder="First Name"
+        placeholder="Enter First Name"
+        required
       />
 
       <label for="nameForm">Last Name:</label>
@@ -21,25 +22,39 @@
         id="nameForm"
         type="text"
         name="last_name"
-        placeholder="Last Name"
+        placeholder="Enter Last Name"
+        required
       />
 
       <p>Please select your gender:</p>
 
       <label for="Male">Male</label>
-      <input id="Male" type="radio" name="gender" />
+      <input id="Male" type="radio" name="gender" value="MALE" required />
 
       <label for="Female">Female</label>
-      <input id="Female" type="radio" name="gender" />
+      <input id="Female" type="radio" name="gender" value="FEMALE" required/>
 
       <label for="Other">Other</label>
-      <input id="Other" type="radio" name="gender" />
+      <input id="Other" type="radio" name="gender" value="OTHER" required />
 
       <p>What is your Email id?</p>
 
-      <label for="emailId">Other</label>
-      <input id="emailId" type="radio" name="gender" />
+      <label for="emailId">Email</label>
+      <input id="emailId" type="email" name="email_id" placeholder="123@ymail.com" required/>
 
+      <label for="password">Password</label>
+      <input id="password" type="password" name="password" placeholder="Password" required/>
+      
+      <p>Birthday:</p>
+
+      <label for="date"></label>
+      <input id ="date" type="date" name="Birthday_date" value="day" required></input>
+      <br>
+      <br>
+      <label for="t&c"> I agree to all the terms and conditions !</label>
+      <input id="t&c" type="checkbox" name="T&C" value="ticked" required><br>
+
+      <br>
       <button>Submit</button>
     </form>
   </body>
