@@ -1,5 +1,10 @@
 h1{
-    color:blue;
+    /* color:blue; */
+    color:#ff7d04;
+    /* border-color: purple;
+    border-width: 5px;
+    border-style: solid ; */
+    border: rgb(9, 17, 63) 2px solid;
 }
 
 li{
@@ -7,5 +12,15 @@ li{
 }
 
 h4{
-    color:red;
+    color: rgba(0,255,0,.5);
+    background: rgb(9, 17, 63);
+}
+
+body{
+    background: url(https://images.pexels.com/photos/245032/pexels-photo-245032.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-repeat: no-repeat;
+    background-size : cover;
+    background-position: center;
+    height: 100vh;
+    
 }
